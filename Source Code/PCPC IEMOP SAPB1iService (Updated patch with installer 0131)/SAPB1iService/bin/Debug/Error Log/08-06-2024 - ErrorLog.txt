@@ -1,0 +1,121 @@
+                                                      SAP Business One Integration Error Log
+09:39:16.7823602          Connected to PCPC - Company Database.
+09:42:04.5670251          Connected to PCPC - Company Database.
+09:44:24.1722758          Connected to PCPC - Company Database.
+09:48:01.3473496          Connected to PCPC - Company Database.
+09:51:14.1914597          Connected to PCPC - Company Database.
+09:52:24.4756311          Connected to PCPC - Company Database.
+09:56:33.9394019          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+09:57:20.4378425          Connected to PCPC - Company Database.
+09:59:36.7010455          Connected to PCPC - Company Database.
+09:59:37.2970323          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:00:10.0515239          Connected to PCPC - Company Database.
+10:01:09.7025331          Connected to PCPC - Company Database.
+10:01:43.7297270          Connected to PCPC - Company Database.
+10:01:44.4987118          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:02:17.4327455          Connected to PCPC - Company Database.
+10:02:18.1387401          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:02:51.2703868          Connected to PCPC - Company Database.
+10:02:51.8533838          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:03:25.2059016          Connected to PCPC - Company Database.
+10:03:25.8279265          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:03:58.7475129          Connected to PCPC - Company Database.
+10:03:59.3075020          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:04:32.4580446          Connected to PCPC - Company Database.
+10:04:33.0100540          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:05:05.7506500          Connected to PCPC - Company Database.
+10:05:06.2146780          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:05:39.0713214          Connected to PCPC - Company Database.
+10:05:39.5293226          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:06:31.2776768          Connected to PCPC - Company Database.
+10:07:04.7390716          Connected to PCPC - Company Database.
+10:07:05.2060585          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:07:37.6596680          Connected to PCPC - Company Database.
+10:07:38.0996601          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:08:10.6631721          Connected to PCPC - Company Database.
+10:08:11.0971534          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:08:43.8157140          Connected to PCPC - Company Database.
+10:08:44.2637084          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+10:09:17.1313096          Connected to PCPC - Company Database.
+10:12:06.2049514          Connected to PCPC - Company Database.
+10:13:09.4612456          Connected to PCPC - Company Database.
+10:14:36.9709588          Connected to PCPC - Company Database.
+10:23:42.5496685          Connected to PCPC - Company Database.
+10:24:35.2017975          Connected to PCPC - Company Database.
+10:28:40.2884996          Connected to PCPC - Company Database.
+10:32:15.8804310          Connected to PCPC - Company Database.
+10:33:01.7888527          Connected to PCPC - Company Database.
+10:38:36.6923800          Connected to PCPC - Company Database.
+10:42:24.3422620          Connected to PCPC - Company Database.
+10:44:50.4792757          Connected to PCPC - Company Database.
+10:46:18.9990374          Connected to PCPC - Company Database.
+10:49:32.1313874          Connected to PCPC - Company Database.
+10:51:44.2120337          Connected to PCPC - Company Database.
+10:52:33.0041095          Connected to PCPC - Company Database.
+10:56:58.6264145          Connected to PCPC - Company Database.
+11:00:54.8864202          Connected to PCPC - Company Database.
+11:05:29.1985281          Connected to PCPC - Company Database.
+11:06:51.9263665          Connected to PCPC - Company Database.
+11:07:53.6085340          Connected to PCPC - Company Database.
+11:09:48.6389683          Connected to PCPC - Company Database.
+11:11:48.7553669          Connected to PCPC - Company Database.
+11:14:38.0971096          Connected to PCPC - Company Database.
+11:16:04.5478335          Connected to PCPC - Company Database.
+11:17:06.4361394          Connected to PCPC - Company Database.
+11:18:54.9694908          Connected to PCPC - Company Database.
+11:22:13.9758441          Connected to PCPC - Company Database.
+11:24:22.4170911          Connected to PCPC - Company Database.
+11:25:18.2313671          Connected to PCPC - Company Database.
+11:25:51.4059206          Connected to PCPC - Company Database.
+11:26:24.5215407          Connected to PCPC - Company Database.
+11:29:31.9839516          Connected to PCPC - Company Database.
+11:30:12.1755284          Connected to PCPC - Company Database.
+11:33:31.3407432          Connected to PCPC - Company Database.
+11:34:04.5202939          Connected to PCPC - Company Database.
+11:34:37.4658339          Connected to PCPC - Company Database.
+11:35:10.6104161          Connected to PCPC - Company Database.
+11:35:43.7069744          Connected to PCPC - Company Database.
+11:38:39.0215587          Connected to PCPC - Company Database.
+14:22:55.2888625          Connected to PCPC - Company Database.
+14:22:56.6518730          Error retrieving data from Excel (C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 8-06)\SAPB1iService\bin\Debug\Import Files\PCPCTEST_Customer IEMOP Business Partner.xlsx - Sheet1). Description : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine. 
+14:23:28.7983684          Connected to PCPC - Company Database.
+14:23:29.7993510          Error retrieving data from Excel (C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 8-06)\SAPB1iService\bin\Debug\Import Files\PCPCTEST_TS-WF-215F-0027123_Sales.xlsx - Sheet1). Description : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine. 
+14:24:02.3499534          Connected to PCPC - Company Database.
+14:26:05.8037653          Connected to PCPC - Company Database.
+14:26:40.2891185          Connected to PCPC - Company Database.
+14:26:41.7780930          Error retrieving data from Excel (C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 8-06)\SAPB1iService\bin\Debug\Import Files\PCPCTEST_TS-WF-215F-0027124_Sales.xlsx - Sheet1). Description : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine. 
+14:28:44.1684760          Connected to PCPC - Company Database.
+14:30:54.5566136          Connected to PCPC - Company Database.
+14:31:27.7203407          Connected to PCPC - Company Database.
+14:32:00.9827273          Connected to PCPC - Company Database.
+14:32:34.0032374          Connected to PCPC - Company Database.
+14:33:07.7128148          Connected to PCPC - Company Database.
+14:33:41.7032900          Connected to PCPC - Company Database.
+14:34:16.2369486          Connected to PCPC - Company Database.
+14:45:23.6678473          Connected to PCPC - Company Database.
+14:45:57.9104512          Connected to PCPC - Company Database.
+14:46:31.0208149          Connected to PCPC - Company Database.
+14:47:04.1775121          Connected to PCPC - Company Database.
+14:47:37.2020350          Connected to PCPC - Company Database.
+14:48:10.1655732          Connected to PCPC - Company Database.
+14:48:43.2451270          Connected to PCPC - Company Database.
+14:49:16.4156797          Connected to PCPC - Company Database.
+14:49:49.8092231          Connected to PCPC - Company Database.
+16:00:35.4197146          Connected to PCPC - Company Database.
+16:02:12.7815307          Connected to PCPC - Company Database.
+16:03:24.1395634          Connected to PCPC - Company Database.
+16:06:15.0961216          Connected to PCPC - Company Database.
+16:07:11.4174033          Connected to PCPC - Company Database.
+16:12:25.5561864          Connected to PCPC - Company Database.
+16:14:48.0943370          Connected to PCPC - Company Database.
+16:17:40.3230036          Connected to PCPC - Company Database.
+16:20:50.3424795          Connected to PCPC - Company Database.
+16:24:51.6372717          Connected to PCPC - Company Database.
+16:27:17.3892288          Connected to PCPC - Company Database.
+16:29:20.2837716          Connected to PCPC - Company Database.
+16:32:00.3485968          Connected to PCPC - Company Database.
+16:33:35.0413041          Connected to PCPC - Company Database.
+16:36:32.8869285          Connected to PCPC - Company Database.
+16:38:55.1320522          Connected to PCPC - Company Database.
+16:40:20.2470091          Connected to PCPC - Company Database.
+16:41:05.0473186          Connected to PCPC - Company Database.

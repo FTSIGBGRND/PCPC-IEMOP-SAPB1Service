@@ -1,0 +1,3 @@
+                                                      SAP Business One Integration Error Log
+21:18:12.3901432          Connected to SBODemoAU - Company Database.
+21:18:48.7687061          Connected to SBODemoAU - Company Database.

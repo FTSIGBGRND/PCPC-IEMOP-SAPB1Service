@@ -1,0 +1,25 @@
+                                                      SAP Business One Integration Error Log
+12:10:27.7977088          Connected to TDPLIVE2016 - Company Database.
+12:11:00.2108169          Connected to TDPLIVE2016 - Company Database.
+12:11:32.7445680          Connected to TDPLIVE2016 - Company Database.
+12:12:05.2778547          Connected to TDPLIVE2016 - Company Database.
+12:12:38.0469699          Connected to TDPLIVE2016 - Company Database.
+12:13:47.7122574          Connected to TDPLIVE2016 - Company Database.
+12:15:17.7181079          Connected to TDPLIVE2016 - Company Database.
+12:18:40.1525598          Connected to TDPLIVE2016 - Company Database.
+12:24:47.8653710          Connected to TDPLIVE2016 - Company Database.
+12:28:49.1490439          Connected to TDPLIVE2016 - Company Database.
+12:29:54.6504426          Connected to TDPLIVE2016 - Company Database.
+12:53:50.1576485          Connected to TDPLIVE2016 - Company Database.
+12:55:16.7276795          Connected to TDPLIVE2016 - Company Database.
+12:57:27.6135610          Connected to TDPLIVE2016 - Company Database.
+15:14:22.6321851          Connected to SBODemoAU - Company Database.
+15:16:02.2992033          Error retrieving data from Excel (C:\Fasttrack Files\Project\The Keepers Holding Inc\Source Code\FTSI SAPB1iService\SAPB1iService\bin\Debug\Import Files\PLX.xlsx - DEC). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+15:29:32.5192673          Connected to SBODemoAU - Company Database.
+15:30:00.3129817          Error retrieving data from Excel (C:\Fasttrack Files\Project\The Keepers Holding Inc\Source Code\FTSI SAPB1iService\SAPB1iService\bin\Debug\Import Files\PLX.xlsx - DEC). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+15:32:18.3147813          Connected to SBODemoAU - Company Database.
+15:37:11.1231744          Connected to SBODemoAU - Company Database.
+16:13:14.6034358          Connected to SBODemoAU - Company Database.
+16:18:16.7908611          Connected to SBODemoAU - Company Database.
+16:19:39.7493008          Connected to SBODemoAU - Company Database.
+16:20:39.8735542          Connected to SBODemoAU - Company Database.

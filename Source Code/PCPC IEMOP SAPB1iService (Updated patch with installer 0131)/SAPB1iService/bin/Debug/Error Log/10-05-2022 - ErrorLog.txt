@@ -1,0 +1,101 @@
+                                                      SAP Business One Integration Error Log
+13:20:07.6474595          Connected to SBODemoAU - Company Database.
+13:28:57.9728837          Connected to SBODemoAU - Company Database.
+13:30:35.7644561          Connected to SBODemoAU - Company Database.
+13:32:51.7412291          Connected to SBODemoAU - Company Database.
+13:35:33.6429351          Connected to SBODemoAU - Company Database.
+13:36:52.5585774          Connected to SBODemoAU - Company Database.
+13:38:07.3584320          Connected to SBODemoAU - Company Database.
+13:41:22.5375991          Connected to SBODemoAU - Company Database.
+13:42:31.3815684          Connected to SBODemoAU - Company Database.
+14:01:22.3357344          Connected to SBODemoAU - Company Database.
+14:06:41.3648600          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+14:06:42.9306784          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\~$PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+14:06:43.9205819          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+14:06:44.9029545          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\~$PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+14:07:32.1444321          Connected to SBODemoAU - Company Database.
+14:10:04.5327665          Connected to SBODemoAU - Company Database.
+14:10:59.7347928          Connected to SBODemoAU - Company Database.
+14:14:57.4719985          Connected to SBODemoAU - Company Database.
+14:16:19.9922106          Connected to SBODemoAU - Company Database.
+14:21:39.2327604          Connected to SBODemoAU - Company Database.
+14:27:36.8533151          Connected to SBODemoAU - Company Database.
+14:32:53.5713765          Connected to SBODemoAU - Company Database.
+14:34:28.9449988          Connected to SBODemoAU - Company Database.
+14:38:04.6763945          Connected to SBODemoAU - Company Database.
+14:41:11.4480399          Connected to SBODemoAU - Company Database.
+14:42:52.1143427          Connected to SBODemoAU - Company Database.
+14:48:52.3377170          Connected to SBODemoAU - Company Database.
+14:51:14.8628215          Connected to SBODemoAU - Company Database.
+14:55:42.6503528          Connected to SBODemoAU - Company Database.
+14:58:51.1232335          Connected to SBODemoAU - Company Database.
+15:02:46.6529068          Connected to SBODemoAU - Company Database.
+15:06:29.5662058          Connected to SBODemoAU - Company Database.
+15:07:21.2835339          Connected to SBODemoAU - Company Database.
+15:12:29.0521203          Connected to SBODemoAU - Company Database.
+15:15:25.2700296          Connected to SBODemoAU - Company Database.
+15:17:03.8621838          Connected to SBODemoAU - Company Database.
+15:20:14.5568716          Connected to SBODemoAU - Company Database.
+15:23:14.8997819          Connected to SBODemoAU - Company Database.
+15:25:52.0055404          Connected to SBODemoAU - Company Database.
+15:27:47.6740136          Connected to SBODemoAU - Company Database.
+15:32:05.7891075          Connected to SBODemoAU - Company Database.
+15:41:20.1618491          Connected to SBODemoAU - Company Database.
+15:42:48.1028541          Connected to SBODemoAU - Company Database.
+15:46:47.5936712          Connected to SBODemoAU - Company Database.
+15:52:08.4596283          Connected to SBODemoAU - Company Database.
+15:54:20.1543050          Connected to SBODemoAU - Company Database.
+15:58:03.6268046          Connected to SBODemoAU - Company Database.
+16:08:04.2452591          Connected to SBODemoAU - Company Database.
+16:12:56.2195128          Connected to SBODemoAU - Company Database.
+16:18:12.6393663          Connected to SBODemoAU - Company Database.
+16:39:25.8318136          Connected to SBODemoAU - Company Database.
+16:41:16.1640323          Connected to SBODemoAU - Company Database.
+16:49:35.4992172          Connected to SBODemoAU - Company Database.
+17:01:55.2968550          Connected to SBODemoAU - Company Database.
+17:04:22.2058924          Connected to SBODemoAU - Company Database.
+17:09:43.3866364          Connected to SBODemoAU - Company Database.
+17:27:14.4929873          Connected to SBODemoAU - Company Database.
+19:07:25.0275589          Connected to SBODemoAU - Company Database.
+19:09:01.1443839          Connected to SBODemoAU - Company Database.
+19:10:48.8257538          Connected to SBODemoAU - Company Database.
+20:07:21.8227765          Connected to SBODemoAU - Company Database.
+20:12:09.0702758          Connected to SBODemoAU - Company Database.
+20:20:39.0578426          Connected to SBODemoAU - Company Database.
+20:22:38.3090547          Connected to SBODemoAU - Company Database.
+20:26:58.8544145          Connected to SBODemoAU - Company Database.
+20:28:03.5798701          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+20:28:59.1108519          Connected to SBODemoAU - Company Database.
+20:31:53.9835891          Connected to SBODemoAU - Company Database.
+20:33:45.1525685          Connected to SBODemoAU - Company Database.
+20:36:04.1354971          Connected to SBODemoAU - Company Database.
+20:43:42.2388039          Connected to SBODemoAU - Company Database.
+20:47:29.5005535          Connected to SBODemoAU - Company Database.
+20:54:25.5017747          Connected to SBODemoAU - Company Database.
+20:58:03.6773995          Connected to SBODemoAU - Company Database.
+21:04:42.3472271          Connected to SBODemoAU - Company Database.
+21:07:40.9081807          Connected to SBODemoAU - Company Database.
+21:08:46.1858238          Connected to SBODemoAU - Company Database.
+21:15:55.2300525          Connected to SBODemoAU - Company Database.
+21:18:41.9151966          Connected to SBODemoAU - Company Database.
+21:25:56.1363606          Connected to SBODemoAU - Company Database.
+21:28:15.9463049          Connected to SBODemoAU - Company Database.
+21:32:06.4955699          Connected to SBODemoAU - Company Database.
+21:33:12.8592988          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:33:15.2319552          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:33:51.0824505          Connected to SBODemoAU - Company Database.
+21:34:00.0809041          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:34:01.0084265          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:34:38.2398884          Connected to SBODemoAU - Company Database.
+21:36:54.6329310          Connected to SBODemoAU - Company Database.
+21:38:43.9535614          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:40:33.4148120          Connected to SBODemoAU - Company Database.
+21:42:45.4938829          Connected to SBODemoAU - Company Database.
+21:45:09.1214845          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:47:48.3374541          Connected to SBODemoAU - Company Database.
+21:49:51.1406346          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_CR_N0001573_20220831_Incoming_2.xlsx - Sheet1). Description : Input string was not in a correct format.Couldn't store <Zero Rated Sales> in F7 Column.  Expected type is Double. 
+21:53:28.8563632          Connected to SBODemoAU - Company Database.
+21:57:21.0768428          Connected to SBODemoAU - Company Database.
+21:59:40.2195379          Connected to SBODemoAU - Company Database.
+23:21:27.6960595          Connected to SBODemoAU - Company Database.
+23:47:18.8899791          Connected to SBODemoAU - Company Database.

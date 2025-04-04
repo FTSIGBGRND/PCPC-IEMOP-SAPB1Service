@@ -1,0 +1,8 @@
+                                                      SAP Business One Integration Error Log
+13:22:43.0620056          Connected to PCPC - Company Database.
+13:22:50.8360964          The network path was not found.
+
+13:22:51.2050985          Error validating integration setup.
+13:24:39.1283550          Connected to PCPC - Company Database.
+13:25:13.3807679          Connected to PCPC - Company Database.
+13:25:47.2930801          Connected to PCPC - Company Database.

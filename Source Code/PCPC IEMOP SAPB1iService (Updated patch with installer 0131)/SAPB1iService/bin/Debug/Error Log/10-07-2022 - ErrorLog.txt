@@ -1,0 +1,31 @@
+                                                      SAP Business One Integration Error Log
+00:00:55.9912426          Connected to SBODemoAU - Company Database.
+00:00:56.8906521          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+00:01:32.2801267          Connected to SBODemoAU - Company Database.
+00:01:36.4907755          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_TS-WF-191F-0000294_Sales_2.xlsx - Sheet1). Description : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine. 
+00:01:42.7871196          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\PCPC_TS-WF-191F-0000752_Purchases_1.xlsx - Sheet1). Description : The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine. 
+00:02:19.3610152          Connected to SBODemoAU - Company Database.
+00:02:52.4950671          Connected to SBODemoAU - Company Database.
+00:03:25.5715912          Connected to SBODemoAU - Company Database.
+00:03:58.5965640          Connected to SBODemoAU - Company Database.
+00:05:12.3283950          Connected to SBODemoAU - Company Database.
+00:05:45.9335411          Connected to SBODemoAU - Company Database.
+00:07:16.2048176          Connected to SBODemoAU - Company Database.
+00:08:17.2098992          Connected to SBODemoAU - Company Database.
+09:48:02.5825208          Connected to SBODemoAU - Company Database.
+09:50:21.1219078          Connected to SBODemoAU - Company Database.
+09:50:55.0691939          Connected to SBODemoAU - Company Database.
+09:51:30.0040958          Connected to SBODemoAU - Company Database.
+09:52:04.9641697          Connected to SBODemoAU - Company Database.
+10:02:16.2380426          Connected to SBODemoAU - Company Database.
+10:03:07.7074174          Connected to SBODemoAU - Company Database.
+10:03:41.4918704          Connected to SBODemoAU - Company Database.
+10:04:15.0021689          Connected to SBODemoAU - Company Database.
+10:04:48.9098916          Connected to SBODemoAU - Company Database.
+10:05:25.7045446          Connected to SBODemoAU - Company Database.
+10:06:00.8130340          Connected to SBODemoAU - Company Database.
+10:06:36.1931798          Connected to SBODemoAU - Company Database.
+10:07:41.9265672          Connected to SBODemoAU - Company Database.
+10:10:44.6696278          Connected to SBODemoAU - Company Database.
+10:12:46.9219200          Connected to SBODemoAU - Company Database.
+10:26:27.7320923          Connected to SBODemoAU - Company Database.

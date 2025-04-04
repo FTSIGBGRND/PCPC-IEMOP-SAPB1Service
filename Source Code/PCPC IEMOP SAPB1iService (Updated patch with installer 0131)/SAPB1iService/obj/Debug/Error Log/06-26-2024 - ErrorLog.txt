@@ -1,0 +1,2 @@
+                                                      SAP Business One Integration Error Log
+08:54:50.2714766          Error Connecting SQL Database.

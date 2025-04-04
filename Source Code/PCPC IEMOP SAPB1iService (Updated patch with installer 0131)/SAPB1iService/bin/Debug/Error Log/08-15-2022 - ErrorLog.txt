@@ -1,0 +1,20 @@
+                                                      SAP Business One Integration Error Log
+15:47:08.6962696          8/15/2022 3:47:08 PM         -4008 - Login SLD Failed, make sure the server, company and user credential are correct
+15:52:17.3112839          Connected to SBODemoAU - Company Database.
+15:52:38.1035999          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:53:10.7156743          Connected to SBODemoAU - Company Database.
+15:53:11.0248495          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:53:43.6179259          Connected to SBODemoAU - Company Database.
+15:53:43.9650001          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:54:16.3690246          Connected to SBODemoAU - Company Database.
+15:54:16.6273355          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:54:49.1657732          Connected to SBODemoAU - Company Database.
+15:54:49.5058652          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:55:21.9869850          Connected to SBODemoAU - Company Database.
+15:55:22.2502802          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:55:55.5092443          Connected to SBODemoAU - Company Database.
+15:55:55.8873512          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:56:28.3159608          Connected to SBODemoAU - Company Database.
+15:56:28.5812519          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+15:57:02.9456999          Connected to SBODemoAU - Company Database.
+15:57:03.3396477          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.

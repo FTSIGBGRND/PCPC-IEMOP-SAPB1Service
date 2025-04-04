@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DidiSoft.Pgp.Net.LdapClient</name>
+    </assembly>
+    <members>
+        <member name="T:DidiSoft.Pgp.Net.LdapClient">
+            <summary>
+            Retrieves keys from LDAP servers that support the pgp ldap schema
+            </summary>
+            <example>
+            <code lang="C#">
+            DidiSoft.Pgp.Net.LdapClient ldap = new DidiSoft.Pgp.Net.LdapClient("127.0.0.1");
+            byte[] keyBytes = ldap.GetKeyByUserId("Didisoft");
+            
+            DidiSoft.Pgp.KeyStore ks = new DidiSoft.Pgp.KeyStore();
+            ks.ImportPublicKey(new MemoryStream(keyBytes));
+            </code>
+            <code lang="VB.NET">
+            Dim ldap As New DidiSoft.Pgp.Net.LdapClient("127.0.0.1")
+            Dim keyBytes As Byte() = ldap.GetKeyByUserId("Didisoft")
+            
+            Dim ks As New DidiSoft.Pgp.KeyStore()
+            ks.ImportPublicKey(New MemoryStream(keyBytes))
+            </code>
+            </example>
+        </member>
+        <member name="P:DidiSoft.Pgp.Net.LdapClient.PartialMatchUserIds">
+            <summary>
+            Should keys be search by part of the User ID (true) or with the whole User ID only (false)
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Net.LdapClient.Timeout">
+            <summary>
+            The length of time, in milliseconds, until the request times out, or the value <see cref="F:System.Threading.Timeout.Infinite"/> to indicate that the request does not time out.
+            The default is 20 seconds (20*1000 milliseconds)
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the class 
+            </summary>
+            <param name="host">host or IP address of the LDAP server that supports PGP schema</param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.#ctor(System.String,System.Int32)">
+            <summary>
+            Creates a new instance of the class 
+            </summary>
+            <param name="host">host or IP address of the LDAP server that supports PGP schema</param>
+            <param name="port">port of the LDAP server</param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Creates a new instance of the class 
+            </summary>
+            <param name="host">host or IP address of the LDAP server that supports PGP schema</param>
+            <param name="port">port of the LDAP server</param>
+            <param name="username">LDAP user account (for example: uid=John.Doe,ou=People,dc=example,dc=com</param>
+            <param name="password">LDAP user account password</param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.SubmitKey(DidiSoft.Pgp.KeyPairInformation)">
+            <summary>
+            Uploads an OpenPGP key into an LDAP server that supports the pgp schema 
+            </summary>
+            <param name="key"><see cref="T:DidiSoft.Pgp.KeyPairInformation"/> OpenPGP key</param>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+            <returns>true on success</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.SubmitKey(System.Byte[])">
+            <summary>
+            Uploads an OpenPGP key into an LDAP server that supports the pgp schema 
+            </summary>
+            <param name="keyBytes">OpenPGP key serialized as array of bytes</param>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+            <returns>true of success</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetKeyByKeyId(System.Int64)">
+            <summary>
+            Retrieves a key from an LDAP server searching by Key Id.
+            </summary>
+            <param name="keyId">key Id</param>
+            <returns>key serialized as byte array, or empty array if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetKeyByKeyIdHex(System.String)">
+            <summary>
+            Retrieves a key from an LDAP server searching by Key Id.
+            </summary>
+            <param name="keyHexId">key Id in hexadecimal format (e.g. "B29931AC")</param>
+            <returns>key serialized as byte array, or empty array if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetKeyByKeyHexId(System.String)">
+            <summary>
+            Retrieves a key from an LDAP server searching by Key Id.
+            </summary>
+            <param name="keyHexId">key Id in hexadecimal format (e.g. "B29931AC")</param>
+            <returns>key serialized as byte array, or empty array if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetSingleKeyByKeyId(System.Int64)">
+            <summary>
+            Retrieves a key from an LDAP server searching by Key Id.
+            </summary>
+            <param name="keyId">key Id</param>
+            <returns><see cref="T:DidiSoft.Pgp.KeyPairInformation"/> or null if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetSingleKeyByKeyIdHex(System.String)">
+            <summary>
+            Retrieves a key from an LDAP server searching by Key Id.
+            </summary>
+            <param name="keyHexId">key Id in hexadecimal format (e.g. "B29931AC")</param>
+            <returns><see cref="T:DidiSoft.Pgp.KeyPairInformation"/> or null if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetKeyByUserId(System.String)">
+            <summary>
+            Retrieves a key from an LDAP server searching by User Id.
+            </summary>
+            <param name="userId">Whole or part of one of the User Id's of the key</param>
+            <returns>key serialized as byte array, or empty array if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetSingleKeyByUserId(System.String)">
+            <summary>
+            Retrieves a key from an LDAP server searching by User Id.
+            </summary>
+            <param name="userId">Whole or part of one of the User Id's of the key</param>
+            <returns><see cref="T:DidiSoft.Pgp.KeyPairInformation"/> or null if there is no such key</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapClient.GetMultipleKeysByUserId(System.String)">
+            <summary>
+            Retrieves multiple keys from an LDAP server searching by User Id.
+            </summary>
+            <remarks>
+            A wild card symbol * can be used in the User Id parameter
+            </remarks>
+            <param name="userId">Whole or part of one of the User Id's of the key(s)</param>
+            <returns>array of <see cref="T:DidiSoft.Pgp.KeyPairInformation"/> for the found keys</returns>
+            <exception cref="T:DidiSoft.Pgp.Net.LdapKeyServerException">network error</exception>
+        </member>
+        <member name="T:DidiSoft.Pgp.Net.LdapKeyServerException">
+            <summary>
+            Exception in communication with the LDAP key server
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Net.LdapKeyServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructs the exception from a string message and another exception
+            </summary>
+            <param name="message">error description</param>
+            <param name="underlying">Wrapped underlying exception</param>
+        </member>
+    </members>
+</doc>

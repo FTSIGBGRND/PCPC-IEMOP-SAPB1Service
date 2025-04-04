@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAPB1iService", "SAPB1iService\SAPB1iService.csproj", "{38BFEC76-DB01-4FC7-AA97-19743D4248E6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SAPB1iServiceInstaller", "SAPB1iServiceInstaller\SAPB1iServiceInstaller.vdproj", "{0B785D06-BC41-45F8-88A3-DA167EAFE62F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38BFEC76-DB01-4FC7-AA97-19743D4248E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BFEC76-DB01-4FC7-AA97-19743D4248E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BFEC76-DB01-4FC7-AA97-19743D4248E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BFEC76-DB01-4FC7-AA97-19743D4248E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B785D06-BC41-45F8-88A3-DA167EAFE62F}.Debug|Any CPU.ActiveCfg = Debug
+		{0B785D06-BC41-45F8-88A3-DA167EAFE62F}.Debug|Any CPU.Build.0 = Debug
+		{0B785D06-BC41-45F8-88A3-DA167EAFE62F}.Release|Any CPU.ActiveCfg = Release
+		{0B785D06-BC41-45F8-88A3-DA167EAFE62F}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0D0F30E-3C67-4381-BFB6-425D221C97B5}
+	EndGlobalSection
+EndGlobal

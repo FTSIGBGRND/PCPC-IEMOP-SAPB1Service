@@ -1,0 +1,26 @@
+                                                      SAP Business One Integration Error Log
+16:04:50.3648739          Connected to PCPC - Company Database.
+16:10:21.8630913          Connected to PCPC - Company Database.
+16:52:52.5637514          Connected to PCPC - Company Database.
+16:56:03.6568839          Connected to PCPC - Company Database.
+17:23:14.5989533          Connected to PCPC - Company Database.
+17:35:18.7014236          Connected to PCPC - Company Database.
+17:36:50.5408622          Connected to PCPC - Company Database.
+17:55:25.5005492          Connected to PCPC - Company Database.
+18:04:36.5030806          Connected to PCPC - Company Database.
+18:12:05.3334547          Connected to PCPC - Company Database.
+18:13:43.0976819          Connected to PCPC - Company Database.
+18:21:33.5909214          Connected to PCPC - Company Database.
+18:22:46.9280396          Connected to PCPC - Company Database.
+18:26:27.4401250          Connected to PCPC - Company Database.
+18:29:02.6524565          Connected to PCPC - Company Database.
+18:33:34.9117533          Connected to PCPC - Company Database.
+18:34:58.1703243          Connected to PCPC - Company Database.
+18:37:21.4802979          Connected to PCPC - Company Database.
+18:40:32.8494576          Connected to PCPC - Company Database.
+18:41:57.7425095          Connected to PCPC - Company Database.
+18:45:57.4071727          Connected to PCPC - Company Database.
+18:47:18.1311533          Connected to PCPC - Company Database.
+18:48:56.2281942          Could not find a part of the path 'C:\GBG - R&D Files\Teree\PCPC IEMOP SAPB1iService (Updated patch with installer 7-31)\SAPB1iService\bin\Debug\Export Files\PCPCTEST\PCPCTEST'.
+18:49:48.7604830          Connected to PCPC - Company Database.
+18:59:17.3955640          Connected to PCPC - Company Database.

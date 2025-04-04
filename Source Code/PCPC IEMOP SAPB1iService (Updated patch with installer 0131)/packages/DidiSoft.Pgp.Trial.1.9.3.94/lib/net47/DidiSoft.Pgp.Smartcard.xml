@@ -1,0 +1,1712 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DidiSoft.Pgp.Smartcard</name>
+    </assembly>
+    <members>
+        <member name="T:DidiSoft.Pgp.Smartcard.BC.SCPgpPublicKeyEncryptedData">
+            <remarks>A public key encrypted data object.</remarks>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.BC.SCPgpPublicKeyEncryptedData.KeyId">
+            <summary>The key ID for the key used to encrypt the data.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpPublicKeyEncryptedData.GetDataStream(DidiSoft.Pgp.Smartcard.SmartcardKeyStore)">
+            <summary>Return the decrypted data stream for the packet.</summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator">
+            <remarks>Generator for PGP signatures.</remarks>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.#ctor(DidX.BouncyCastle.Bcpg.PublicKeyAlgorithmTag,DidX.BouncyCastle.Bcpg.HashAlgorithmTag)">
+            <summary>Create a generator for the passed in keyAlgorithm and hashAlgorithm codes.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.InitSign(System.Int32,DidiSoft.Pgp.Smartcard.SmartcardPrivateKey)">
+            <summary>Initialise the generator for signing.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.InitSign(System.Int32,DidiSoft.Pgp.Smartcard.SmartcardPrivateKey,DidX.BouncyCastle.Security.SecureRandom)">
+            <summary>Initialise the generator for signing.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.GenerateOnePassVersion(System.Boolean)">
+            <summary>Return the one pass header associated with the current signature.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.Generate">
+            <summary>Return a signature object containing the current signature state.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.GenerateCertification(System.String,DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+            <summary>Generate a certification for the passed in ID and key.</summary>
+            <param name="id">The ID we are certifying against the public key.</param>
+            <param name="pubKey">The key we are certifying against the ID.</param>
+            <returns>The certification.</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.GenerateCertification(DidX.BouncyCastle.Bcpg.OpenPgp.PgpUserAttributeSubpacketVector,DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+            <summary>Generate a certification for the passed in userAttributes.</summary>
+            <param name="userAttributes">The ID we are certifying against the public key.</param>
+            <param name="pubKey">The key we are certifying against the ID.</param>
+            <returns>The certification.</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.GenerateCertification(DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey,DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+            <summary>Generate a certification for the passed in key against the passed in master key.</summary>
+            <param name="masterKey">The key we are certifying against.</param>
+            <param name="pubKey">The key we are certifying.</param>
+            <returns>The certification.</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpSignatureGenerator.GenerateCertification(DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey)">
+            <summary>Generate a certification, such as a revocation, for the passed in key.</summary>
+            <param name="pubKey">The key we are certifying.</param>
+            <returns>The certification.</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpV3SignatureGenerator.#ctor(DidX.BouncyCastle.Bcpg.PublicKeyAlgorithmTag,DidX.BouncyCastle.Bcpg.HashAlgorithmTag)">
+            <summary>Create a generator for the passed in keyAlgorithm and hashAlgorithm codes.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpV3SignatureGenerator.InitSign(System.Int32,DidiSoft.Pgp.Smartcard.SmartcardPrivateKey)">
+            <summary>Initialise the generator for signing.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpV3SignatureGenerator.InitSign(System.Int32,DidiSoft.Pgp.Smartcard.SmartcardPrivateKey,DidX.BouncyCastle.Security.SecureRandom)">
+            <summary>Initialise the generator for signing.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpV3SignatureGenerator.GenerateOnePassVersion(System.Boolean)">
+            <summary>Return the one pass header associated with the current signature.</summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.BC.SCPgpV3SignatureGenerator.Generate">
+            <summary>Return a V3 signature object containing the current signature state.</summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.ClearSignedHelper">
+            <summary>
+            Clear signing helper
+            </summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.SmartcardException">
+            <summary>
+            General smartcard operation error
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardException.FormatError(System.String,System.UInt16)">
+            <summary>
+            Formats Smart card errors with human readable status word
+            </summary>
+            <param name="error">General error message</param>
+            <param name="errCode">Smart card status word</param>
+            <returns>human readable error message</returns>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.SmartcardExtensions">
+            <summary>
+            Additions to <see cref="T:DidiSoft.Pgp.PGPLib"/> for working with an OpenPGP smartcard represented by <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/>
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DetachedSignFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.String,System.Boolean)">
+             <summary>
+             Creates an OpenPGP detached signature for file with a private key located in a smartcard
+             </summary>
+             
+             <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+             <param name="inputFileName">Input file to be clear signed (absolute or relative path)</param>
+             <param name="keyStore">Smartcard containing the signing private key</param>
+             <param name="hashingAlgorithm">Hashing algorithm to be used, for example HashAlgorithm.SHA1</param>
+             <param name="outputFileName">Output file where the clear signed message will be stored (absolute or relative path)</param>
+             
+             <example>
+             This example demonstrates how to create a detached OpenPGP signature
+             <code lang="C#">
+             using System;
+             using DidiSoft.Pgp;
+             using DidiSoft.Pgp.Smartcard;
+             
+             class SignFileExample
+             {
+              public static void Main()
+              {
+             	// initialize the key store
+             	SmartcardKeyStore ks = new SmartcardKeyStore("Yubikey", "123456");
+             
+             	// create an instance of the library
+             	PGPLib pgp = new PGPLib();
+             
+             	pgp.SignFile(@"DataFiles\INPUT.txt", ks,
+             					  HashAlgorithm.SHA1,
+             					  @"DataFiles\INPUT.sig.txt");
+              }
+             }
+             </code>
+             <code lang="VB">
+             Imports System
+             Imports DidiSoft.Pgp
+             Imports DidiSoft.Pgp.Smartcard
+             
+             Class SignFileExample
+              Public Shared Sub Demo()
+             	' initialize the key store
+             	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+             
+             	' create an instance of the library
+             	Dim pgp As New PGPLib()
+             
+             	pgp.SignFile("DataFiles\INPUT.txt", _
+             					ks, _
+             					HashAlgorithm.SHA1, _
+             					"DataFiles\OUTPUT.sig.txt")
+              End Sub
+             End Class
+             </code>
+             </example>
+             
+             <exception cref="T:System.IO.IOException">If an I/O error occurs</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> suitable for signing</exception>
+             <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DetachedSignStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.Boolean)">
+            <summary>
+            Creates an OpenPGP detached signature for a data stream with private key located in a smartcard
+            </summary>
+            <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+            <param name="dataStream">Data to be signed</param>
+            <param name="keyStore">Smartcard containing the private key to be used for signing</param>
+            <param name="outputStream">Output stream for the clear text signed data</param>
+            <param name="asciiArmor">if true the output will be in ASCII armored format, otherwise in binary pgp format</param>
+            
+            <example>
+            This example shows how to create a detached signature for an Input Stream
+            <code lang="C#">
+            using System;
+            using System.IO;
+            
+            using DidiSoft.Pgp.Smartcard;
+            using DidiSoft.Pgp;
+            
+            class SignStreamExample 
+            {
+             public static void Demo()
+             {
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+                SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+                
+            	// clear text sign
+            	pgp.DetachedSignStream(File.OpenRead(@"DataFiles\INPUT.txt"), 
+            					    ks,
+            						File.Create(@"DataFiles\OUTPUT.sig.txt"));
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class ClearSignStreamExample
+             Public Shared Sub Demo()
+            	Dim pgp As New PGPLib()
+            	
+                Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+            	pgp.DetachedSignStream(File.OpenRead("DataFiles\INPUT.txt"), _
+            					ks, _
+            					File.Create("DataFiles\OUTPUT.sig.txt"))
+             End Sub
+            End Class
+            </code>
+            </example>
+            <exception cref="T:System.ArgumentException">If the specified <c>hashingAlgorithm</c>parameter is not among the expected values</exception>
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no suitable private key in the smartcard</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DetachedSignString(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore)">
+            <summary>
+            Creates a detached OpenPGP signature for String message with a private key located in a smartcard
+            </summary>
+            <seealso cref="!:VerifyString(String, KeyStore, out String)"/>
+            
+            <param name="stringToSign">String to be clear signed</param>
+            <param name="keyStore">Smartcard containing the signing private key</param>
+            <returns>detached signature in ASCII armored format</returns>
+            
+            <example>
+             This sample shows how to produce a detached signature when the siging key is in a <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/>
+            <code lang="C#">
+            using System;
+            using DidiSoft.Pgp;
+            using DidiSoft.Pgp.Smartcard;
+            
+            class KeyStoreClearSignString
+            {
+             public static void Demo()
+             {
+            	// initialize the key store
+            	SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+            
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+            	string plainText = "Hello World";
+            
+            	// clear text sign
+            	string signedString = pgp.DetachedSignString(plainText, ks);
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class KeyStoreSignString
+             Public Shared Sub Demo() 
+            	' initialize the key store
+            	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+                ' create an instance of the library
+            	Dim pgp As New PGPLib()
+            
+            	Dim plainText As String = "Hello World"
+            
+            	Dim signedString As String = pgp.DetachedSignString(plainText, ks)
+             End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.KeyStore"/> having such Key Id</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the supplied private key password is incorrect</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.SignFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.String,System.Boolean)">
+             <summary>
+             OpenPGP signs a file with a private key located in a KeyStore.  
+             </summary>
+             <remarks>
+            
+             Signed messages contain both the original message and the signature used to verify 
+             that the message comes from a trusted sender and has not been changed.
+             <para>
+             GPG equivalent command: gpg --output outputFileName --sign inputFileName 
+             </para>
+             </remarks>
+             <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+             <param name="inputFileName">Input file to be clear signed (absolute or relative path)</param>
+             <param name="keyStore">Smartcard containing the signing private key</param>
+             <param name="outputFileName">Output file where the clear signed message will be stored (absolute or relative path)</param>
+             <param name="asciiArmor">When true the output will be in ASCII armored format, when false in binary OpenPGP format</param>
+             
+             <example>
+             This example demonstrates how to OpenPGP clear sign a data stream with the old version 3 signatures.
+             <code lang="C#">
+             using System;
+             using DidiSoft.Pgp;
+             using DidiSoft.Pgp.Smartcard;
+             
+             class SignFileExample
+             {
+              public static void Main()
+              {
+             	// initialize the key store
+             	SmartcardKeyStore ks = new SmartcardKeyStore("Yubikey", "123456");
+             
+             	// create an instance of the library
+             	PGPLib pgp = new PGPLib();
+             
+             	pgp.SignFile(@"DataFiles\INPUT.txt", ks,
+             					  @"DataFiles\INPUT.sig.txt");
+              }
+             }
+             </code>
+             <code lang="VB">
+             Imports System
+             Imports DidiSoft.Pgp
+             Imports DidiSoft.Pgp.Smartcard
+             
+             Class SignFileExample
+              Public Shared Sub Demo()
+             	' initialize the key store
+             	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+             
+             	' create an instance of the library
+             	Dim pgp As New PGPLib()
+             
+             	pgp.SignFile("DataFiles\INPUT.txt", _
+             					ks, _
+             					"DataFiles\OUTPUT.sig.txt")
+              End Sub
+             End Class
+             </code>
+             </example>
+             
+             <exception cref="T:System.IO.IOException">If an I/O error occurs</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.KeyStore"/> having such Key Id</exception>
+             <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.SignStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.Boolean)">
+            <summary>
+            OpenPGP signs a data stream with private key located in a smartcard
+            </summary>
+            <remarks>
+            Signed messages contain both the original message in clear text and the signature used to verify 
+            that the message comes from a trusted sender and has not been changed.
+            <br/><br/>
+            GPG equivalent command: gpg --output outputFileName --sign inputFileName 
+            </remarks>
+            <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+            <param name="dataStream">Data to be clear signed </param>
+            <param name="keyStore">Smartcard containing the private key to be used for signing</param>
+            <param name="outputStream">Output stream for the clear text signed data</param>
+            <param name="asciiArmor">if true the output will be in ASCII armored format, otherwise in binary pgp format</param>
+            
+            <example>
+            This example shows how to sign a text file with the signing private key located in a Smartcard.
+            <code lang="C#">
+            using System;
+            using System.IO;
+            
+            using DidiSoft.Pgp.Smartcard;
+            using DidiSoft.Pgp;
+            
+            class ClearSignStreamExample 
+            {
+             public static void Demo()
+             {
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+                SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+                
+            	// clear text sign
+            	pgp.SignStream(File.OpenRead(@"DataFiles\INPUT.txt"), 
+            					    ks,
+            						File.Create(@"DataFiles\OUTPUT.sig.txt"));
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class ClearSignStreamExample
+             Public Shared Sub Demo()
+            	Dim pgp As New PGPLib()
+            	
+                Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+            	pgp.SignStream(File.OpenRead("DataFiles\INPUT.txt"), _
+            					ks, _
+            					File.Create("DataFiles\OUTPUT.sig.txt"))
+             End Sub
+            End Class
+            </code>
+            </example>
+            <exception cref="T:System.ArgumentException">If the specified <c>hashingAlgorithm</c>parameter is not among the expected values</exception>
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no suitable private key in the smartcard</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.SignStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.Boolean)">
+            <summary>
+            OpenPGP signs a data stream with private key located in a smartcard
+            </summary>
+            <remarks>
+            Signed messages contain both the original message in clear text and the signature used to verify 
+            that the message comes from a trusted sender and has not been changed.
+            <br/><br/>
+            GPG equivalent command: gpg --output outputFileName --sign inputFileName 
+            </remarks>
+            <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+            <param name="dataStream">Data to be clear signed </param>
+            <param name="internalFileNameLabel">File name label to be associated with the encrypted data</param>
+            <param name="keyStore">Smartcard containing the private key to be used for signing</param>
+            <param name="outputStream">Output stream for the clear text signed data</param>
+            <param name="asciiArmor">if true the output will be in ASCII armored format, otherwise in binary pgp format</param>
+            
+            <example>
+            This example shows how to sign a text file with the signing private key located in a Smartcard.
+            <code lang="C#">
+            using System;
+            using System.IO;
+            
+            using DidiSoft.Pgp.Smartcard;
+            using DidiSoft.Pgp;
+            
+            class ClearSignStreamExample 
+            {
+             public static void Demo()
+             {
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+                SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+                
+            	// clear text sign
+            	string fileNameLabel = "INPUT.txt";
+            	pgp.SignStream(File.OpenRead(@"DataFiles\INPUT.txt"), fileNameLabel, 
+            					    ks,
+            						File.Create(@"DataFiles\OUTPUT.sig.txt"));
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class ClearSignStreamExample
+             Public Shared Sub Demo()
+            	Dim pgp As New PGPLib()
+            	
+                Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+                Dim fileNameLabel As String = "Input.txt"
+            	pgp.SignStream(File.OpenRead("DataFiles\INPUT.txt"), fileNameLabel, _
+            					ks, _
+            					File.Create("DataFiles\OUTPUT.sig.txt"))
+             End Sub
+            End Class
+            </code>
+            </example>
+            <exception cref="T:System.ArgumentException">If the specified <c>hashingAlgorithm</c>parameter is not among the expected values</exception>
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no suitable private key in the smartcard</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.SignString(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore)">
+            <summary>
+            OpenPGP signs a String message with a private key located in an smartcard
+            <para>
+            GPG equivalent command: gpg --sign
+            </para>
+            </summary>
+            <remarks>
+            Signed messages contain both the original message in clear text and the signature used to verify 
+            that the message comes from a trusted sender and has not been changed.
+            </remarks>
+            <seealso cref="!:VerifyString(String, KeyStore, out String)"/>
+            
+            <param name="stringToSign">String to be clear signed</param>
+            <param name="keyStore">Smartcard containing the signing private key</param>
+            <returns>signed string message</returns>
+            
+            <example>
+             This sample shows how to produce a signed message when our siging key is in a <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/>
+            <code lang="C#">
+            using System;
+            using DidiSoft.Pgp;
+            using DidiSoft.Pgp.Smartcard;
+            
+            class KeyStoreClearSignString
+            {
+             public static void Demo()
+             {
+            	// initialize the key store
+            	SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+            
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+            	string plainText = "Hello World";
+            
+            	// clear text sign
+            	string signedString = pgp.SignString(plainText, ks);
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class KeyStoreSignString
+             Public Shared Sub Demo() 
+            	' initialize the key store
+            	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+                ' create an instance of the library
+            	Dim pgp As New PGPLib()
+            
+            	Dim plainText As String = "Hello World"
+            
+            	Dim signedString As String = pgp.SignString(plainText, ks)
+             End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.KeyStore"/> having such Key Id</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the supplied private key password is incorrect</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.ClearSignFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,DidiSoft.Pgp.HashAlgorithm,System.String)">
+             <summary>
+             OpenPGP clear signs a file with a private key located in a KeyStore.  
+             </summary>
+             <remarks>
+            
+             Clear text signed messages contain both the original message in clear text and the signature used to verify 
+             that the message comes from a trusted sender and has not been changed.
+             <para>
+             GPG equivalent command: gpg --output outputFileName --force-v3-sigs --clearsign inputFileName 
+             </para>
+             </remarks>
+             <seealso cref="!:ClearSignFileV3(FileInfo, FileInfo, String, HashAlgorithm, FileInfo)"/>
+             <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+             <param name="inputFileName">Input file to be clear signed (absolute or relative path)</param>
+             <param name="keyStore">Smartcard containing the signing private key</param>
+             <param name="hashingAlgorithm">Hashing algorithm to be used, for example HashAlgorithm.SHA1</param>
+             <param name="outputFileName">Output file where the clear signed message will be stored (absolute or relative path)</param>
+             
+             <example>
+             This example demonstrates how to OpenPGP clear sign a data stream with the old version 3 signatures.
+             <code lang="C#">
+             using System;
+             using DidiSoft.Pgp;
+             using DidiSoft.Pgp.Smartcard;
+             
+             class ClearSignFileExample
+             {
+              public static void Main()
+              {
+             	// initialize the key store
+             	SmartcardKeyStore ks = new SmartcardKeyStore("Yubikey", "123456");
+             
+             	// create an instance of the library
+             	PGPLib pgp = new PGPLib();
+             
+             	// clear text sign
+             	pgp.ClearSignFile(@"DataFiles\INPUT.txt", ks,
+             					  HashAlgorithm.SHA1,
+             					  @"DataFiles\INPUT.sig.txt");
+              }
+             }
+             </code>
+             <code lang="VB">
+             Imports System
+             Imports DidiSoft.Pgp
+             Imports DidiSoft.Pgp.Smartcard
+             
+             Class ClearSignFileExample
+              Public Shared Sub Demo()
+             	' initialize the key store
+             	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+             
+             	' create an instance of the library
+             	Dim pgp As New PGPLib()
+             
+             	' clear text sign
+             	pgp.ClearSignFile("DataFiles\INPUT.txt", _
+             					ks, _
+             					HashAlgorithm.SHA1, _
+             					"DataFiles\OUTPUT.sig.txt")
+              End Sub
+             End Class
+             </code>
+             </example>
+             
+             <exception cref="T:System.IO.IOException">If an I/O error occurs</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.KeyStore"/> having such Key Id</exception>
+             <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.ClearSignStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,DidiSoft.Pgp.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            OpenPGP clear text signs a data stream with private key located in a smartcard
+            </summary>
+            <remarks>
+            Clear text signed messages contain both the original message in clear text and the signature used to verify 
+            that the message comes from a trusted sender and has not been changed.
+            <br/><br/>
+            GPG equivalent command: gpg --output outputFileName --clearsign inputFileName 
+            </remarks>
+            <seealso cref="T:DidiSoft.Pgp.HashAlgorithm"/>
+            
+            <param name="dataStream">Data to be clear signed </param>
+            <param name="keyStore">Smartcard containing the private key to be used for signing</param>
+            <param name="hashingAlgorithm">Hashing algorithm to be used</param>
+            <param name="outputStream">Output stream for the clear text signed data</param>
+            
+            <example>
+            This example shows how to clear sign a text file with the signing private key located in a Smartcard.
+            <code lang="C#">
+            using System;
+            using System.IO;
+            
+            using DidiSoft.Pgp.Smartcard;
+            using DidiSoft.Pgp;
+            
+            class ClearSignStreamExample 
+            {
+             public static void Demo()
+             {
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+                SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+                
+            	// clear text sign
+            	pgp.ClearSignStream(File.OpenRead(@"DataFiles\INPUT.txt"), 
+            					    ks,
+            						HashAlgorithm.SHA256, 
+            						File.Create(@"DataFiles\OUTPUT.sig.txt"));
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class ClearSignStreamExample
+             Public Shared Sub Demo()
+            	Dim pgp As New PGPLib()
+            	
+                Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+            	pgp.ClearSignStream(File.OpenRead("DataFiles\INPUT.txt"), _
+            					ks, _
+            					HashAlgorithm.SHA256, _
+            					File.Create("DataFiles\OUTPUT.sig.txt"))
+             End Sub
+            End Class
+            </code>
+            </example>
+            <exception cref="T:System.ArgumentException">If the specified <c>hashingAlgorithm</c>parameter is not among the expected values</exception>
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no suitable private key in the smartcard</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.ClearSignString(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,DidiSoft.Pgp.HashAlgorithm)">
+            <summary>
+            OpenPGP clear signs a String message with a private key located in an smartcard
+            <para>
+            GPG equivalent command: gpg --clearsign
+            </para>
+            </summary>
+            <remarks>
+            Clearsigned messages contain both the original message in clear text and the signature used to verify 
+            that the message comes from a trusted sender and has not been changed.
+            </remarks>
+            <seealso cref="!:VerifyString(String, KeyStore, out String)"/>
+            
+            <param name="stringToSign">String to be clear signed</param>
+            <param name="keyStore">Smartcard containing the signing private key</param>
+            <param name="privateKeyId">signing private key Id</param>
+            <param name="privateKeyPassword">signing private key password</param>
+            <param name="hashingAlgorithm">Hashing algorithm</param>
+            <returns>clear signed string message</returns>
+            
+            <example>
+             This sample shows how to produce a clear signed message when our siging key is in a <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/>
+            <code lang="C#">
+            using System;
+            using DidiSoft.Pgp;
+            using DidiSoft.Pgp.Smartcard;
+            
+            class KeyStoreClearSignString
+            {
+             public static void Demo()
+             {
+            	// initialize the key store
+            	SmartcardKeyStore ks = SmartcardKeyStore.OpenSmartcard("Yubikey", "123456");
+            
+            	// create an instance of the library
+            	PGPLib pgp = new PGPLib();
+            	
+            	string plainText = "Hello World";
+            
+            	// clear text sign
+            	string clearSignedString = pgp.ClearSignString( plainText, ks, HashAlgorithm.SHA1);
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class KeyStoreClearSignString
+             Public Shared Sub Demo() 
+            	' initialize the key store
+            	Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+                ' create an instance of the library
+            	Dim pgp As New PGPLib()
+            
+            	Dim plainText As String = "Hello World"
+            
+            	Dim clearSignedString As String = pgp.ClearSignString(plainText, ks, HashAlgorithm.SHA1)
+             End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">If an I/O error occures</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key in this <see cref="T:DidiSoft.Pgp.KeyStore"/> having such Key Id</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the supplied private key password is incorrect</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.EncryptStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.Boolean)">
+            <summary>
+            OpenPGP encrypts given data with public key in a smartcard
+            </summary>
+            
+            <remarks>
+            A special string '_CONSOLE' will be used as internal file name for the encrypted data
+            <para>
+            Compression algorithm used is the one specified through <see cref="!:Compression"/>
+            </para>
+            Symmetric cipher algorithm used is the one specified through <see cref="!:Cypher"/>
+            </remarks>
+            
+            <seealso cref="!:DefaultFileNameLabel"/>
+            
+            <param name="dataStream">Data to be encrypted </param> 
+            <param name="smartcard">OpenPGP smartcard</param>
+            <param name="outputStream">OpenPGP encrypted output</param>
+            <param name="asciiArmor">If <c><see langword="true" /></c> the encrypted file will be in ASCII armoured format, otherwise in binary format</param>
+              
+            <example>
+            <code lang="C#">
+            using System.IO;
+            using DidiSoft.Pgp; 
+               
+            class EncryptStreamDemo {
+            	public void Demo() {
+            		PGPLib pgp = new PGPLib();
+            			
+                    Stream inputStream = File.OpenRead(@"DataFiles\INPUT.txt");
+                    Stream encryptedStream = File.Create(@"DataFiles\OUTPUT.pgp");
+                    	
+            	    // initialize the smartcard
+            		SmartcardKeyStore smartcard = new SmartcardKeyStore("Yubikey", "123456");
+            		
+            		pgp.EncryptStream(inputStream, smartcard, encryptedStream);	
+            	}
+            }	
+            </code>
+            <code lang="VB">
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            
+            Class EncryptStreamDemo
+              Public Sub Demo()
+            	Dim pgp As New PGPLib()
+            		
+            	Dim inputStream As Stream = File.OpenRead("DataFiles\INPUT.txt")
+            	Dim encryptedStream As Stream = File.Create("DataFiles\OUTPUT.pgp")
+            		
+            	 ' initialize the smartcard
+            	 Dim smartcard As SmartcardKeyStore = New SmartcardKeyStore("Yubikey", "123456")
+            		
+                 pgp.EncryptStream(inputStream, smartcard, encryptedStream)
+              End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">I/O error</exception>
+            <exception cref="T:DidiSoft.Pgp.PGPException">General encryption error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If the supplied public keys is not a public key at all</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsExpiredException">If the supplied public keys is expired</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsRevokedException">If the supplied public keys is revoked</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.EncryptStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+            OpenPGP encrypts given data with public key in a smartcard
+            </summary>
+            
+            <remarks>
+            A special string '_CONSOLE' will be used as internal file name for the encrypted data
+            <para>
+            Compression algorithm used is the one specified through <see cref="!:Compression"/>
+            </para>
+            Symmetric cipher algorithm used is the one specified through <see cref="!:Cypher"/>
+            </remarks>
+            
+            <seealso cref="!:DefaultFileNameLabel"/>
+            
+            <param name="dataStream">Data to be encrypted </param> 
+            <param name="smartcard">OpenPGP smartcard</param>
+            <param name="outputStream">OpenPGP encrypted output</param>
+            <param name="asciiArmor">If <c><see langword="true" /></c> the encrypted file will be in ASCII armoured format, otherwise in binary format</param>
+            <param name="withIntegrityCheck">If <c><see langword="true" /></c> additional integrity check information will be appended</param>
+              
+            <example>
+            <code lang="C#">
+            using System.IO;
+            using DidiSoft.Pgp; 
+               
+            class EncryptStreamDemo {
+            	public void Demo() {
+            		PGPLib pgp = new PGPLib();
+            			
+                    Stream inputStream = File.OpenRead(@"DataFiles\INPUT.txt");
+                    Stream encryptedStream = File.Create(@"DataFiles\OUTPUT.pgp");
+                    	
+                    // specify should the output be ASCII or binary
+                    bool asciiArmor = true;
+                     
+                    // specify should integrity check be added
+                    bool withIntegrityCheck = true;
+                        
+            	    // initialize the smartcard
+            		SmartcardKeyStore smartcard = new SmartcardKeyStore("Yubikey", "123456");
+            		
+            		pgp.EncryptStream(inputStream, smartcard, encryptedStream, asciiArmor, withIntegrityCheck);	
+            	}
+            }	
+            </code>
+            <code lang="VB">
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            
+            Class EncryptStreamDemo
+              Public Sub Demo()
+            	Dim pgp As New PGPLib()
+            		
+            	Dim inputStream As Stream = File.OpenRead("DataFiles\INPUT.txt")
+            	Dim encryptedStream As Stream = File.Create("DataFiles\OUTPUT.pgp")
+            		
+                 ' specify should the output be ASCII or binary
+                 Dim asciiArmor As Boolean = True
+                 
+                 ' specify should integrity check be added
+                 Dim withIntegrityCheck As Boolean = True
+                    
+            	 ' initialize the smartcard
+            	 Dim smartcard As SmartcardKeyStore = New SmartcardKeyStore("Yubikey", "123456")
+            		
+                 pgp.EncryptStream(inputStream, smartcard, encryptedStream, asciiArmor, withIntegrityCheck)
+              End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">I/O error</exception>
+            <exception cref="T:DidiSoft.Pgp.PGPException">General encryption error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If the supplied public keys is not a public key at all</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsExpiredException">If the supplied public keys is expired</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsRevokedException">If the supplied public keys is revoked</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.EncryptFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.String,System.Boolean)">
+            <summary>
+            OpenPGP encrypts given file with public key in a smartcard
+            </summary>
+            
+            <remarks>
+            A special string '_CONSOLE' will be used as internal file name for the encrypted data
+            <para>
+            Compression algorithm used is the one specified through <see cref="!:Compression"/>
+            </para>
+            Symmetric cipher algorithm used is the one specified through <see cref="!:Cypher"/>
+            </remarks>
+            
+            <seealso cref="!:DefaultFileNameLabel"/>
+            
+            <param name="dataFile">Data file to be encrypted </param> 
+            <param name="smartcard">OpenPGP smartcard</param>
+            <param name="outputFile">OpenPGP encrypted output file</param>
+            <param name="asciiArmor">If <c><see langword="true" /></c> the encrypted file will be in ASCII armoured format, otherwise in binary format</param>
+              
+            <example>
+            <code lang="C#">
+            using System.IO;
+            using DidiSoft.Pgp; 
+               
+            class EncryptStreamDemo {
+            	public void Demo() {
+            		PGPLib pgp = new PGPLib();
+            			
+                    string inputStream = @"DataFiles\INPUT.txt";
+                    string encryptedStream = @"DataFiles\OUTPUT.pgp";
+                    	
+            	    // initialize the smartcard
+            		SmartcardKeyStore smartcard = new SmartcardKeyStore("Yubikey", "123456");
+            		
+            		pgp.EncryptFile(inputStream, smartcard, encryptedStream);	
+            	}
+            }	
+            </code>
+            <code lang="VB">
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            
+            Class EncryptStreamDemo
+              Public Sub Demo()
+            	Dim pgp As New PGPLib()
+            		
+            	Dim inputStream As String = "DataFiles\INPUT.txt"
+            	Dim encryptedStream As String = "DataFiles\OUTPUT.pgp"
+            		
+            	 ' initialize the smartcard
+            	 Dim smartcard As SmartcardKeyStore = New SmartcardKeyStore("Yubikey", "123456")
+            		
+                 pgp.EncryptFile(inputStream, smartcard, encryptedStream)
+              End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">I/O error</exception>
+            <exception cref="T:DidiSoft.Pgp.PGPException">General encryption error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If the supplied public keys is not a public key at all</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsExpiredException">If the supplied public keys is expired</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsRevokedException">If the supplied public keys is revoked</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.EncryptFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            OpenPGP encrypts given file with public key in a smartcard
+            </summary>
+            
+            <remarks>
+            A special string '_CONSOLE' will be used as internal file name for the encrypted data
+            <para>
+            Compression algorithm used is the one specified through <see cref="!:Compression"/>
+            </para>
+            Symmetric cipher algorithm used is the one specified through <see cref="!:Cypher"/>
+            </remarks>
+            
+            <seealso cref="!:DefaultFileNameLabel"/>
+            
+            <param name="dataFile">Data file to be encrypted </param> 
+            <param name="smartcard">OpenPGP smartcard</param>
+            <param name="outputFile">OpenPGP encrypted output file</param>
+            <param name="asciiArmor">If <c><see langword="true" /></c> the encrypted file will be in ASCII armoured format, otherwise in binary format</param>
+            <param name="withIntegrityCheck">If <c><see langword="true" /></c> additional integrity check information will be appended</param>
+              
+            <example>
+            <code lang="C#">
+            using System.IO;
+            using DidiSoft.Pgp; 
+               
+            class EncryptFileDemo {
+            	public void Demo() {
+            		PGPLib pgp = new PGPLib();
+            			
+                    string inputStream = @"DataFiles\INPUT.txt";
+                    string encryptedStream = @"DataFiles\OUTPUT.pgp";
+                    	
+                    // specify should the output be ASCII or binary
+                    bool asciiArmor = true;
+                     
+                    // specify should integrity check be added
+                    bool withIntegrityCheck = true;
+                        
+            	    // initialize the smartcard
+            		SmartcardKeyStore smartcard = new SmartcardKeyStore("Yubikey", "123456");
+            		
+            		pgp.EncryptStream(inputStream, smartcard, encryptedStream, asciiArmor, withIntegrityCheck);	
+            	}
+            }	
+            </code>
+            <code lang="VB">
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            
+            Class EncryptFileDemo
+              Public Sub Demo()
+            	Dim pgp As New PGPLib()
+            		
+            	Dim inputStream As String = "DataFiles\INPUT.txt"
+            	Dim encryptedStream As String = "DataFiles\OUTPUT.pgp"
+            		
+                 ' specify should the output be ASCII or binary
+                 Dim asciiArmor As Boolean = True
+                 
+                 ' specify should integrity check be added
+                 Dim withIntegrityCheck As Boolean = True
+                    
+            	 ' initialize the smartcard
+            	 Dim smartcard As SmartcardKeyStore = New SmartcardKeyStore("Yubikey", "123456")
+            		
+                 pgp.EncryptStream(inputStream, smartcard, encryptedStream, asciiArmor, withIntegrityCheck)
+              End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">I/O error</exception>
+            <exception cref="T:DidiSoft.Pgp.PGPException">General encryption error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If the supplied public keys is not a public key at all</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsExpiredException">If the supplied public keys is expired</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.KeyIsRevokedException">If the supplied public keys is revoked</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DecryptFile(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.String)">
+            <summary>
+             Decrypts a PGP encrypted file using Private key located inKeyStore.
+             </summary>
+             <param name="encryptedFile">File to be decrypted (absolute or relative path) or as ASCII armour string</param>
+             <param name="keyStore">Smartcard containing the private key</param>
+             <param name="outputFileName">File name of the Output decrypted file (absolute or relative path)</param>
+              
+             <returns>The original file name of the decrypted data if stored inside the PGP archive or an empty string if there was no internal file name label.</returns> 
+             
+             <example>
+             <code lang="C#">
+             using System;
+             using DidiSoft.Pgp;
+             using DidiSoft.Pgp.Smartcard;
+            
+            	public class KeyStoreDecryptFile
+            	{
+            		public static void Demo()
+            		{
+            		    // initialize the smartcard
+            			SmartcardKeyStore keyStore = new SmartcardKeyStore("Yubikey", "123456");
+            			
+                     // initialize the library
+            			PGPLib pgp = new PGPLib();	
+            			
+                     pgp.DecryptFile(@"c:\INPUT.pgp", keyStore, @"c:\OUTPUT.txt");			
+            		}
+            	}
+             </code>
+             <code lang="VB">
+             Imports System
+             Imports DidiSoft.Pgp
+             Imports DidiSoft.Pgp.Smartcard
+            
+            	Public Class KeyStoreDecryptFile
+            		Public Shared Sub Demo()
+            		    ' initialize the smartcard
+            			Dim keyStore As New SmartcardKeyStore("Yubikey", "123456")
+            			
+                     ' initialize the library
+            			Dim pgp As New PGPLib()
+            
+            			pgp.DecryptFile("c:\INPUT.pgp", keyStore, "c:\OUTPUT.txt")
+            		End Sub
+            	End Class
+             </code>
+             </example>
+             
+             <exception cref="T:System.IO.IOException">I/O error</exception>
+             <exception cref="T:DidiSoft.Pgp.PGPException">General OpenPGP error</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If the supplied <see cref="T:DidiSoft.Pgp.KeyStore"/> does not contain a suitable decryption key</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the password for the decryption key is incorrect</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the input data is not a valid OpenPGP encrypted message</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.IntegrityCheckException">The encrypted message is corrupted</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.FileIsPBEEncryptedException">This is a password only encrypted archive but we try to decrypt it with a private key</exception>
+             <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DecryptBytes(DidiSoft.Pgp.PGPLib,System.Byte[],DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.Byte[]@)">
+            <summary>
+             Decrypts OpenPGP encrypted data in the form of byte array with a private key in a KeyStore
+             </summary>
+             <param name="encryptedBytes">OpenPGP encrypted data as byte array</param>
+             <param name="keyStore">KeyStore containing the Private key</param>
+             <param name="outputBytes">Decrypted content</param>
+              
+             <returns>The original file name of the decrypted data if stored inside the PGP archive or an empty string if there was no internal file name label.</returns> 
+             <exception cref="T:DidiSoft.Pgp.PGPException">if an OpenPGP related error has occurred</exception>
+             <exception cref="T:System.IO.IOException">I/O error </exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no matching private key in the KeyStore</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">if the supplied password for the private key is incorrect</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the input data is not a valid OpenPGP encrypted message</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.IntegrityCheckException">The encrypted message is corrupted</exception>
+             <exception cref="T:DidiSoft.Pgp.Exceptions.FileIsPBEEncryptedException">This is a password only encrypted archive but we try to decrypt it with a private key</exception>
+             <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DecryptString(DidiSoft.Pgp.PGPLib,System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyStore)">
+            <summary>
+            Decrypts OpenPGP encrypted string message with Smartcard
+            </summary>
+            
+            <param name="encryptedString">OpenPGP encrypted string message or file location</param>
+            <param name="keyStore">Smartcard that contains the decryption key</param>
+            <param name="privateKeyPassword">Password of the private decryption key located in theKeyStore</param>
+            <returns>decrypted plain text string</returns>
+            
+            <example>
+            <code lang="C#">
+            using System;
+            using DidiSoft.Pgp;
+            using DidiSoft.Pgp.Smartcard;
+            
+            class DecryptStringWithSmartcard
+            {
+             public void Demo()
+             {
+              // initialize the key store
+              SmartcardKeyStore ks = new SmartcardKeyStore("Yubikey", "123456");
+            
+              PGPLib pgp = new PGPLib();
+            
+              // OpenPGP encrypted string
+              string encryptedString = ... 
+            
+              string plainText = pgp.DecryptString(encryptedString, ks);
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Class DecryptStringWithKeyStore
+            	Public Sub Demo()
+            		' initialize the key store
+            		Dim ks As New SmartcardKeyStore("Yubikey", "123456")
+            
+            	    Dim pgp As New PGPLib()
+            			
+            		' OpenPGP encrypted string
+            		Dim encryptedString As String = ...
+            
+            		Dim plainText As String = pgp.DecryptString(encryptedString, ks)
+            	End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:DidiSoft.Pgp.PGPException">if an OpenPGP related error has occurred</exception>
+            <exception cref="T:System.IO.IOException">I/O error </exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If the supplied private key cannot be used to decrypt this message or is not a private key at all</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the password for the decryption key is incorrect</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">The input data is not a valid OpenPGP encrypted message</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.IntegrityCheckException">The encrypted message is corrupted</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.FileIsPBEEncryptedException">This is a password only encrypted message but we try to decrypt it with a private key</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.DecryptStream(DidiSoft.Pgp.PGPLib,System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream)">
+            <summary>
+            Decrypts an OpenPGP encrypted data stream with a private key located in a Smartcard
+            </summary>
+            <param name="encryptedStream">OpenPGP encrypted data stream</param>
+            <param name="keyStore">Smartcard KeyStore</param>
+            <param name="outputStream">Decrypted content</param>
+             
+            <returns>The original file name of the decrypted data if stored inside the PGP archive or an empty string if there was no internal file name label.</returns> 
+            <example>
+            This example shows how to decrypt an OpenPGP encrypted stream with a private key located in a smartcard.
+            <code lang="C#">
+            using System;
+            using System.IO;
+            using DidiSoft.Pgp;
+            using DidiSoft.Pgp.Smartcard;
+            
+            public class DecryptStreamDemo
+            {
+             public void Demo()
+             {
+            	 // initialize the library
+            	 PGPLib pgp = new PGPLib();
+            	
+              // initialize theKeyStore
+              SmartcardKeyStore keyStore = new SmartcardKeyStore("Yubikey", "123456");
+             
+              using (Stream inputFileStream = new FileStream(@"c:\INPUT.pgp", FileMode.Open))
+              using (Stream decryptedStream = new FileStream(@"c:\OUTPUT.txt", FileMode.Create))
+              {
+            	  // decrypt and obtain the original file name
+            	  string originalFileName = 
+            	    pgp.DecryptStream(inputFileStream,
+            					  keyStore,
+            					  decryptedStream);		
+              }					  
+             }
+            }
+            </code>
+            <code lang="VB">
+            Imports System
+            Imports System.IO
+            Imports DidiSoft.Pgp
+            Imports DidiSoft.Pgp.Smartcard
+            
+            Public Class DecryptStreamDemo
+             Public Sub Demo()
+            	 ' create an instance of the library
+            	 Dim pgp As New PGPLib()
+            
+              ' initialize theKeyStore
+             Dim keyStore As New SmartcardKeyStore("Yubikey", "123456")
+             
+              Using inputStream As Stream = New FileStream("c:\INPUT.pgp", FileMode.Open)
+               Using decryptedStream As Stream = New FileStream("c:\OUTPUT.txt", FileMode.Create)
+               
+            	  ' decrypt and obtain the original file name
+            	  Dim originalFileName As String
+            	  originalFileName = _
+            	    pgp.DecryptStream(inputStream, _
+            					keyStore, _
+            					decryptedStream)
+              End Using		
+             End Using
+             
+             End Sub
+            End Class
+            </code>
+            </example>
+            
+            <exception cref="T:System.IO.IOException">if an I/O error has occurred</exception>
+            <exception cref="T:DidiSoft.Pgp.PGPException">if an OpenPGP related error has occurred</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If the supplied private key cannot be used to decrypt this message</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">if the supplied password for the private key is incorrect</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the input data is not a valid OpenPGP encrypted message</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.IntegrityCheckException">The encrypted message is corrupted</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.FileIsPBEEncryptedException">This is a password only encrypted archive but we try to decrypt it with a private key</exception>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Error communicating with the smartcard device</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.ParseLiteralData(DidiSoft.Pgp.PGPLib,DidX.BouncyCastle.Bcpg.OpenPgp.PgpLiteralData,DidX.BouncyCastle.Bcpg.OpenPgp.PgpOnePassSignature,System.IO.Stream)">
+            <summary>
+            Parses PGP literal Data
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardExtensions.ParseSignedDataVersion3(DidiSoft.Pgp.PGPLib,DidX.BouncyCastle.Bcpg.OpenPgp.PgpSignatureList,DidX.BouncyCastle.Bcpg.OpenPgp.PgpObjectFactory,DidiSoft.Pgp.Smartcard.SmartcardKeyStore,System.IO.Stream,System.IO.Stream,DidiSoft.Pgp.Smartcard.SignatureCheck)">
+            <summary>
+            Parses Pgp signed Data
+            </summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore">
+            <summary>
+            Represents an OpenPGP smartcard
+            </summary>
+            <remarks>
+            Implements [0] https://gnupg.org/ftp/specs/OpenPGP-smart-card-application-3.4.pdf
+            </remarks>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.CardName">
+            <summary>
+            Returns the current card reader full name
+            </summary>
+            <remarks>
+            If no card reader has been initialized, then null is returned
+            </remarks>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.Pin1RetriesCount">
+            <summary>
+            Returns the available retries count for the PIN1 password
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ResetCounterRetriesCount">
+            <summary>
+            Returns the available retries count for the Reset Counter (RC code)
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.Pin3RetriesCount">
+            <summary>
+            Returns the available retries count for the PIN3 (Admin) password
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ApplicationId">
+            <summary>
+            OpenPGP Applet ID
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ApplicationVersion">
+            <summary>
+            OpenPGP Applet Version
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.CardManufacturer">
+            <summary>
+            OpenPGP Card Manufacturer
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.SerialNumber">
+            <summary>
+            Card Serial Number
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetCards">
+            <summary>
+            List of available smartcards loaded in the machine
+            </summary>
+            <returns>available smartcards loaded in the machine</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.OpenDefaultSmartcard">
+            <summary>
+            Creates a read only instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> by accessing the first available smartcard
+            </summary>
+            <remarks>
+            Only information methods can be invoked. Cryptography methods will require a call to the <see cref="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.Login(System.String)"/> method
+            </remarks>
+            <param name="password">smartcard password</param>
+            <returns>instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> ready to work with the smartcard</returns>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">if no smartcard is available or an error has occured communicating with it</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided password doesn't match the smartcard password</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.OpenDefaultSmartcard(System.String)">
+            <summary>
+            Creates an instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> by accessing the first available smartcard
+            </summary>
+            <param name="password">smartcard password</param>
+            <returns>instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> ready to work with the smartcard</returns>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">if no smartcard is available or an error has occured communicating with it</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided password doesn't match the smartcard password</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.OpenSmartcard(System.String,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> by accessing the specified smartcard
+            </summary>
+            <param name="reader">Smartcard name (<see cref="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetCards"/>)</param>
+            <param name="password">smartcard password</param>
+            <returns>instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> ready to work with the smartcard</returns>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">if no smartcard is available or an error has occured communicating with it</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided password doesn't match the smartcard password</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.#ctor(System.String)">
+            <summary>
+            Creates an instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> by accessing the specified smartcard
+            </summary>
+            <param name="reader">Smartcard name (<see cref="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetCards"/>)</param>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">if no smartcard is available or an error has occured communicating with it</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided password doesn't match the smartcard password</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.#ctor(System.String,System.String)">
+            <summary>
+            Creates an instance of <see cref="T:DidiSoft.Pgp.Smartcard.SmartcardKeyStore"/> by accessing the specified smartcard
+            </summary>
+            <param name="reader">Smartcard name (<see cref="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetCards"/>)</param>
+            <param name="password">smartcard password</param>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">if no smartcard is available or an error has occured communicating with it</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided password doesn't match the smartcard password</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.IsAuthenticated">
+            <summary>
+            Checks is the PIN 1 password already entered
+            </summary>
+            <returns>true if the smart card PIN 1 has been enetered with either the <see cref="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.Login(System.String)"/> method or with a constructor</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.Login(System.String)">
+            <summary>
+            Authenticates this class against the smart card 
+            </summary>
+            <param name="password">PIN 1 of the smart card</param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.FormatCard(System.String)">
+            <summary>
+            Resets the card in ints initial state
+            </summary>
+            <param name="adminPassword">Admin PIN</param>
+            <remarks>
+            User tyhis with Caution: ALL DATA STORED ON THE CARD WILL BE REMOVED.</remarks>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetSigningKey">
+            <summary>
+            Returns the master signing key stored in the smartcard
+            </summary>
+            <returns>the master signing key stored in the smartcard or null if there is no key stored</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetAuthenticationKey">
+            <summary>
+            Returns the authentication key stored in the smartcard
+            </summary>
+            <returns>the authentication key stored in the smartcard or null if there is no key stored</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetDecryptionKey">
+            <summary>
+            Returns the decryption sub key stored in the smartcard
+            </summary>
+            <returns>the decryption sub key stored in the smartcard or null if there is no key stored</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GetKey(DidiSoft.Pgp.Smartcard.SmartcardKeyType)">
+            <summary>
+            Returns the specified public key from the smart card
+            </summary>
+            <param name="type">key information</param>
+            <returns>the specified public key from the smart card or null if there is no such key on the card</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.FormatRsaKeyImportData(DidX.BouncyCastle.Bcpg.OpenPgp.PgpPrivateKey,DidiSoft.Pgp.Smartcard.SmartcardKeyType)">
+            <summary>
+            Format according to http://g10code.com/docs/openpgp-card-3.0.pdf
+            </summary>
+            <param name="privKey"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.FormatEcKeyImportData(DidX.BouncyCastle.Bcpg.OpenPgp.PgpPrivateKey,DidX.BouncyCastle.Bcpg.OpenPgp.PgpPublicKey,DidiSoft.Pgp.Smartcard.SmartcardKeyType)">
+            <summary>
+            Format according to http://g10code.com/docs/openpgp-card-3.3.pdf
+            </summary>
+            <param name="privKey"></param>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ImportPrivateKey(System.IO.Stream,System.String,System.Int32,DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.String)">
+            <summary>
+            Imports a private key inside an OpenPGP card
+            </summary>
+            <remarks>
+            if such key is already imported, it will be overridden!
+            </remarks>
+            <param name="keyStream">key source</param>
+            <param name="privateKeyPassword">password of the private key source</param>
+            <param name="keyId">Key Id of the sub key to be imported, or key order (0=primary key, 1=first sub key, 2=second sub key, etc.) </param>
+            <param name="type">destination OpenPGP card key type</param>
+            <param name="adminPassword">PIN3 (Admin) password for the OpenPGP card</param>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Smart card error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the provided key source doesn't contain PGP key</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key with the specified key Id in the provided source</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided private key password is wrong or the PIN3 (Admin) card password is wrong</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ImportPrivateKey(System.String,System.String,System.Int32,DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.String)">
+            <summary>
+            Imports a private key inside an OpenPGP card
+            </summary>
+            <remarks>
+            if such key is already imported, it will be overridden!
+            </remarks>
+            <param name="keyFileName">key source</param>
+            <param name="privateKeyPassword">password of the private key source</param>
+            <param name="keyId">Key Id of the sub key to be imported, or key order (0=primary key, 1=first sub key, 2=second sub key, etc.) </param>
+            <param name="type">destination OpenPGP card key type</param>
+            <param name="adminPassword">PIN3 (Admin) password for the OpenPGP card</param>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Smart card error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the provided key source doesn't contain PGP key</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key with the specified key Id in the provided source</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided private key password is wrong or the PIN3 (Admin) card password is wrong</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ImportPrivateKey(DidiSoft.Pgp.KeyPairInformation,System.String,System.Int32,DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.String)">
+            <summary>
+            Imports a private key inside an OpenPGP card
+            </summary>
+            <remarks>
+            if such key is already imported, it will be overridden!
+            </remarks>
+            <param name="key"><see cref="T:DidiSoft.Pgp.KeyPairInformation"/> containing the source key</param>
+            <param name="privateKeyPassword">password of the private key source</param>
+            <param name="keyId">Key Id of the sub key to be imported, or key order (0=primary key, 1=first sub key, 2=second sub key, etc.) </param>
+            <param name="type">destination OpenPGP card key type</param>
+            <param name="adminPassword">PIN3 (Admin) password for the OpenPGP card</param>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Smart card error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.NonPGPDataException">if the provided key source doesn't contain PGP key</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPrivateKeyException">If there is no private key with the specified key Id in the provided source</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided private key password is wrong or the PIN3 (Admin) card password is wrong</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.GenerateRsaKeyPair(DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.String)">
+            <summary>
+            Creates a new RSA key directly on the smartcard
+            </summary>
+            <param name="type">type of the key to be generated</param>
+            <param name="pin2">PIN3 (Administrator) password of the smartcard</param>
+            <returns>A key object representing the public key part of the newly generated key</returns>
+            <exception cref="T:DidiSoft.Pgp.Smartcard.SmartcardException">Smart card error</exception>
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPasswordException">If the provided PIN3 (Admin) card password is wrong</exception>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ExportPublicKey(System.IO.Stream,DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.Boolean)">
+            <summary>Exports public key from this smart card, into a Stream</summary>
+            <param name="outStream">Stream where the public key will be exported</param>
+            <param name="type">Key type to be exported</param>
+            <param name="asciiArmored">if <see langword="true" />, output is in ASCII armoured format, otherwise in binary format</param>
+            
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If there is no such key</exception>
+            <exception cref="T:System.IO.IOException">If file writing error occur</exception>
+            
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.ExportPublicKey(System.String,DidiSoft.Pgp.Smartcard.SmartcardKeyType,System.Boolean)">
+            <summary>Exports public key from this smart card, into a Stream</summary>
+            <param name="outFileName">File locatiion where the public key will be exported</param>
+            <param name="type">Key type to be exported</param>
+            <param name="asciiArmored">if <see langword="true" />, output is in ASCII armoured format, otherwise in binary format</param>
+            
+            <exception cref="T:DidiSoft.Pgp.Exceptions.WrongPublicKeyException">If there is no such key</exception>
+            <exception cref="T:System.IO.IOException">If file writing error occur</exception>
+            
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.CardLoginPIN2">
+            <summary>
+            same as PIN1 but for some operations p2 must be 0x82
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardKeyStore.AddDataLengthTag(System.IO.Stream,System.Byte[],System.Byte[])">
+            <summary>
+            Create a TLV (data length) tag and value and store it at BUFFER
+            </summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.SmartcardKeyType">
+            <summary>
+            Types of the OpenPGP keys on the smart card
+            </summary>
+        </member>
+        <member name="F:DidiSoft.Pgp.Smartcard.SmartcardKeyType.SignatureKey">
+            <summary>
+            Master key used for signing
+            </summary>
+        </member>
+        <member name="F:DidiSoft.Pgp.Smartcard.SmartcardKeyType.DecryptionKey">
+            <summary>
+            Decryption sub key
+            </summary>
+        </member>
+        <member name="F:DidiSoft.Pgp.Smartcard.SmartcardKeyType.AuthenticationKey">
+            <summary>
+            Authentication (and signatures) sub key
+            </summary>
+        </member>
+        <member name="T:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey">
+            <summary>
+            Provides low level API access to the private key stored on the smart card
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.GetFingerprint">
+            <summary>The fingerprint of the key</summary>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.KeyId">
+            <summary>
+            Returns the raw Key ID of this key
+            </summary>
+            <value>Key ID of this key</value>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.KeyIdHex">
+            <summary>
+            Returns a string representing the hexadecimal value of the Key ID.
+            </summary>
+            <value>the hexadecimal Key ID of this key</value>
+        </member>
+        <member name="P:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.KeyIdLongHex">
+            <summary>
+            Returns a string representing the hexadecimal value of the Key ID.
+            </summary>
+            <value>the full hexadecimal Key ID of this key pair</value>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.GenerateSignature(System.Byte[])">
+            <summary>
+            Performs RSA signature over the provided digest
+            </summary>
+            <param name="digest">digest to be signed</param>
+            <returns>RSA signature over the digest</returns>
+        </member>
+        <member name="M:DidiSoft.Pgp.Smartcard.SmartcardPrivateKey.Decipher(System.Byte[])">
+            <summary>
+            Deciphers encrypted data
+            </summary>
+            <param name="encrypted">encrypted data</param>
+            <returns>decrypted data</returns>
+        </member>
+        <member name="T:DidiSoft.Smartcard.PCSC.APDUCommand">
+            <summary>
+            This class represents a command APDU
+            </summary>
+        </member>
+        <member name="F:DidiSoft.Smartcard.PCSC.APDUCommand.APDU_MIN_LENGTH">
+            <summary>
+            Minimun size in bytes of an APDU command
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUCommand.#ctor(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte[],System.Byte)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="bCla">Class byte</param>
+            <param name="bIns">Instruction byte</param>
+            <param name="bP1">Parameter P1 byte</param>
+            <param name="bP2">Parameter P2 byte</param>
+            <param name="baData">Data to send to the card if any, null if no data to send</param>
+            <param name="bLe">Number of data expected, 0 if none</param>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.Class">
+            <summary>
+            Class get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.Ins">
+            <summary>
+            Instruction get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.P1">
+            <summary>
+            Parameter P1 get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.P2">
+            <summary>
+            Parameter P2 get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.Data">
+            <summary>
+            Data get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUCommand.Le">
+            <summary>
+            Length expected get property
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUCommand.ToString">
+            <summary>
+            Overrides the ToString method to format the APDUCommand object as a string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUCommand.ToArray">
+            <summary>
+            ToArray method to return byte[] represented by the APDUCommand object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DidiSoft.Smartcard.PCSC.APDUParam">
+            <summary>
+            This class is used to update a set of parameters of an APDUCommand object
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUParam.#ctor(DidiSoft.Smartcard.PCSC.APDUParam)">
+            <summary>
+            Copy constructor (used for cloning)
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUParam.Clone">
+            <summary>
+            Clones the current APDUParam instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUParam.Reset">
+            <summary>
+            Resets the current instance, all flags are set to false
+            </summary>
+        </member>
+        <member name="T:DidiSoft.Smartcard.PCSC.APDUResponse">
+            <summary>
+            This class represents the APDU response sent by the card
+            </summary>
+        </member>
+        <member name="F:DidiSoft.Smartcard.PCSC.APDUResponse.SW_LENGTH">
+            <summary>
+            Status bytes length
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUResponse.#ctor(System.Byte[])">
+            <summary>
+            Constructor from the byte data sent back by the card
+            </summary>
+            <param name="baData">Buffer of data from the card</param>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUResponse.Data">
+            <summary>
+            Response data get property. Contains the data sent by the card minus the 2 status bytes (SW1, SW2)
+            null if no data were sent by the card
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUResponse.SW1">
+            <summary>
+            SW1 byte get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUResponse.SW2">
+            <summary>
+            SW2 byte get property
+            </summary>
+        </member>
+        <member name="P:DidiSoft.Smartcard.PCSC.APDUResponse.Status">
+            <summary>
+            Status get property
+            </summary>
+        </member>
+        <member name="M:DidiSoft.Smartcard.PCSC.APDUResponse.ToString">
+            <summary>
+            Overrides the ToString method to format to a string the APDUResponse object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DidiSoft.Smartcard.PCSC.PCSCException">
+            <summary>
+             PC/SC exceptions
+            </summary>
+        </member>
+    </members>
+</doc>

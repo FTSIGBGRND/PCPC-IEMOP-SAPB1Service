@@ -1,0 +1,21 @@
+HANA
+U : SYSTEM
+P : 1q2w#E$R
+
+SAP SLD
+U : B1SiteUser
+P : 1234
+
+
+HW Key : R0602308750
+Version : 9.3 PL10
+
+HANA DB HWKey : M2372732868
+ID : NDB
+
+Crystal REport 2016
+
+
+RSP
+U : admin
+P : admin123

@@ -1,0 +1,37 @@
+                                                      SAP Business One Integration Error Log
+14:31:31.7737178          Connected to SBODemoAU - Company Database.
+14:39:51.7141515          Connected to SBODemoAU - Company Database.
+14:42:06.2582188          Connected to SBODemoAU - Company Database.
+14:43:41.1328273          Connected to SBODemoAU - Company Database.
+14:48:58.8419350          Connected to SBODemoAU - Company Database.
+14:57:35.2375525          Connected to SBODemoAU - Company Database.
+14:57:46.4116833          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : 'DEC$' is not a valid name. Make sure that it does not include invalid characters or punctuation and that it is not too long. 
+14:58:35.8528342          Connected to SBODemoAU - Company Database.
+14:58:44.4328991          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : 'DEC$' is not a valid name. Make sure that it does not include invalid characters or punctuation and that it is not too long. 
+15:07:25.1836595          Connected to SBODemoAU - Company Database.
+15:07:47.0065858          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : External table is not in the expected format. 
+15:08:38.1835199          Connected to SBODemoAU - Company Database.
+15:10:47.2570625          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : External table is not in the expected format. 
+15:11:47.3041410          Connected to SBODemoAU - Company Database.
+15:26:49.1822660          Connected to SBODemoAU - Company Database.
+15:29:54.9571128          Connected to SBODemoAU - Company Database.
+15:30:28.2257014          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : 'DEC$' is not a valid name. Make sure that it does not include invalid characters or punctuation and that it is not too long. 
+15:31:27.2777215          Connected to SBODemoAU - Company Database.
+15:31:39.6696010          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - DEC). Description : 'DEC$' is not a valid name. Make sure that it does not include invalid characters or punctuation and that it is not too long. 
+15:32:32.7487243          Connected to SBODemoAU - Company Database.
+15:34:37.5544008          Connected to SBODemoAU - Company Database.
+15:37:06.1349077          Connected to SBODemoAU - Company Database.
+15:52:57.7779152          Connected to SBODemoAU - Company Database.
+15:55:42.9807731          Connected to SBODemoAU - Company Database.
+16:03:14.8372115          Connected to SBODemoAU - Company Database.
+16:12:03.2239186          Connected to SBODemoAU - Company Database.
+16:18:44.1192510          Connected to SBODemoAU - Company Database.
+16:28:36.5361201          Connected to SBODemoAU - Company Database.
+16:29:48.7056195          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\IEMOP Business Partner.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+16:29:52.5352075          Error retrieving data from Excel (C:\Fasttrack Files\Project\Palm Concepcion Power Corp\Source Code\PCPC IEMOP SAPB1iService\SAPB1iService\bin\Debug\Import Files\~$IEMOP Business Partner.xlsx - Sheet1). Description : The Microsoft Access database engine cannot open or write to the file ''. It is already opened exclusively by another user, or you need permission to view and write its data. 
+16:30:49.2528083          Connected to SBODemoAU - Company Database.
+16:33:42.7381279          Connected to SBODemoAU - Company Database.
+16:38:08.7015379          Connected to SBODemoAU - Company Database.
+16:40:50.8205396          Connected to SBODemoAU - Company Database.
+16:43:41.0128298          Connected to SBODemoAU - Company Database.
+16:45:27.2306441          Connected to SBODemoAU - Company Database.

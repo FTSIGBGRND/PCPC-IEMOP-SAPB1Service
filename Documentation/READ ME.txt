@@ -1,0 +1,40 @@
+make sure compilation is AnyCPU and 32Bit
+
+HANA v9 
+52.76.54.132
+UN: ask implem for acc creation
+PW: ask implem for acc creation
+
+SAPB1
+Company: PCPC
+UN: manager
+PW: ftsi
+
+Connection Settings [To Run the System]
+172.31.24.203:30015
+HANA DB
+SYSTEM
+1q2w#E$R
+
+
+CLIENT RDP
+192.168.11.103 or jeci-sapapp3.pcpc.local
+jeci-sapapp.pcpc.local
+pcpc\fasttrack or JECI-SAPAPP\fasttrack
+1mpl3m3nt0r_1
+
+Juxtapose Credentials
+You need to install the attached Sonicwall client to access our site via VPN. Once installed, create a VPN connection using the following parameters:
+    vpn host: 121.58.253.243
+    userid: fasttrack
+    password: 1mpl3m3nt0r_1
+
+Once VPN has been effected, you may already access the SAP DB using the credentials below:
+    server name: jeci-sapdbs
+    IP address: 192.168.11.51 or 52
+    userid: root
+    password: 1mpl3m3nt0r_1
+
+	Remote desktop connection ka sa jeci-sapapp.pcpc.local
+	
+	Userid is pcpc\fasttrack. Password same sa vp

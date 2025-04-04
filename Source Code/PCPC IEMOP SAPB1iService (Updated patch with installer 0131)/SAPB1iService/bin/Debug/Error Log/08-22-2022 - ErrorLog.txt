@@ -1,0 +1,13 @@
+                                                      SAP Business One Integration Error Log
+18:16:23.1840948          Connected to SBODemoAU - Company Database.
+18:18:49.5214206          Connected to SBODemoAU - Company Database.
+18:30:49.2538219          Connected to SBODemoAU - Company Database.
+18:34:02.6883145          Connected to SBODemoAU - Company Database.
+18:37:54.6102371          Connected to SBODemoAU - Company Database.
+18:39:55.2564567          Connected to SBODemoAU - Company Database.
+18:41:36.2780154          Connected to SBODemoAU - Company Database.
+18:43:28.7319782          Connected to SBODemoAU - Company Database.
+18:44:53.4228467          Connected to SBODemoAU - Company Database.
+18:47:48.6633296          Connected to SBODemoAU - Company Database.
+18:49:36.3679991          Connected to SBODemoAU - Company Database.
+18:51:21.1909828          Connected to SBODemoAU - Company Database.

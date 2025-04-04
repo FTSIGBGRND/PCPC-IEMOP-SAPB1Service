@@ -1,0 +1,7 @@
+                                                      SAP Business One Integration Error Log
+16:19:33.2183777          Connected to PCPC - Company Database.
+16:20:06.3910180          Connected to PCPC - Company Database.
+16:20:38.4896426          Connected to PCPC - Company Database.
+16:21:11.2002764          Connected to PCPC - Company Database.
+16:22:35.6702987          Connected to PCPC - Company Database.
+16:31:15.3763167          Connected to PCPC - Company Database.

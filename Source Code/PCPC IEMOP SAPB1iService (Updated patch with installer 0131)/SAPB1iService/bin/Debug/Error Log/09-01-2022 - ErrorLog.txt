@@ -1,0 +1,35 @@
+                                                      SAP Business One Integration Error Log
+19:44:02.2098943          Connected to SBODemoAU - Company Database.
+19:44:03.4106701          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:44:38.1568363          Connected to SBODemoAU - Company Database.
+19:44:38.9537039          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:45:41.1662762          Connected to SBODemoAU - Company Database.
+19:45:42.1396627          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:46:15.0343776          Connected to SBODemoAU - Company Database.
+19:46:15.4721997          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:46:50.6283163          Connected to SBODemoAU - Company Database.
+19:46:51.7129833          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:47:27.1408286          Connected to SBODemoAU - Company Database.
+19:47:27.4589771          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:48:00.7445891          Connected to SBODemoAU - Company Database.
+19:48:01.3389990          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:48:34.3029321          Connected to SBODemoAU - Company Database.
+19:48:34.7816499          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:49:08.5392451          Connected to SBODemoAU - Company Database.
+19:49:09.1715496          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:49:42.0762720          Connected to SBODemoAU - Company Database.
+19:49:42.5350454          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:50:18.7065498          Connected to SBODemoAU - Company Database.
+19:50:19.3987052          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:50:53.4902553          Connected to SBODemoAU - Company Database.
+19:50:54.0232278          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:51:28.3306325          Connected to SBODemoAU - Company Database.
+19:51:29.1913251          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:52:02.5073778          Connected to SBODemoAU - Company Database.
+19:52:02.9920803          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:52:36.6682055          Connected to SBODemoAU - Company Database.
+19:52:37.3224538          Integration Setup is missing. Go to Tools > User Defined Windows > FTISSP - FT Integration Setup.
+19:53:36.1046263          Connected to SBODemoAU - Company Database.
+19:56:21.8238011          Connected to SBODemoAU - Company Database.
+19:59:03.1271433          Connected to SBODemoAU - Company Database.
+20:12:03.2672916          Connected to SBODemoAU - Company Database.
